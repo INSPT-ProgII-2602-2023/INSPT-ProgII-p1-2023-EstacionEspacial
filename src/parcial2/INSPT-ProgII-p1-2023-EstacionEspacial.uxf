@@ -1,0 +1,50 @@
+<diagram program="umletino" version="15.1"><zoom_level>15</zoom_level><element><id>UMLClass</id><coordinates><x>167</x><y>64</y><w>360</w><h>180</h></coordinates><panel_attributes>EstacionEspacial
+
+--
+
+--
++ imprimirManifiestos(): void
++ estacionarNave(Nave): boolean
+- buscarAtraqueLibre(): PuntoDeAtraque
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>722</x><y>64</y><w>315</w><h>135</h></coordinates><panel_attributes>PuntoDeAtraque
+--
+--
++ imprimirManifiesto(): void
++ estaDisponible(): boolean
++ estacionar(Nave): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>722</x><y>319</y><w>315</w><h>210</h></coordinates><panel_attributes>/Nave/
+--
+- planetaOrigen: String
+- cantTripulantes: int
+--
++ getCantTripulantes(): int
++ imprimirManifiesto(): void
+/+ completarManifiesto(): void/
+/+ sePuedeEstacionar(): boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>512</x><y>109</y><w>240</w><h>75</h></coordinates><panel_attributes>lt=&lt;-
+atraques
+m1=*
+</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>467</x><y>754</y><w>405</w><h>135</h></coordinates><panel_attributes>NaveCargo
+--
+_+ VOL_MAX_ESTACIONAR: double = 100_
+--
++ completarManifiesto(): void
++ sePuedeEstacionar(): boolean
+- volumenDeCargaSuperiorA(double): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>887</x><y>754</y><w>315</w><h>150</h></coordinates><panel_attributes>NaveCruiser
+--
+- cantPasajeros: int
+--
++ completarManifiesto(): void
++ sePuedeEstacionar(): boolean
+- porcPasajeros(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>902</x><y>514</y><w>165</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;160</additional_attributes></element><element><id>Relation</id><coordinates><x>662</x><y>514</y><w>195</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>857</x><y>184</y><w>195</w><h>165</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+- naveEnganchada</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>137</x><y>574</y><w>345</w><h>150</h></coordinates><panel_attributes>Carga
+--
+- descripcion: String
+- volumen: double
+--
++ imprimirManifiesto(): void
++ volumenSuperiorA(double): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>302</x><y>709</y><w>195</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- carga</panel_attributes><additional_attributes>10;10;10;80;110;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>182</x><y>394</y><w>255</w><h>90</h></coordinates><panel_attributes>/Manifestable/
+--
+--
+/+ imprimirManifiesto(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>422</x><y>439</y><w>330</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>302</x><y>469</y><w>45</w><h>135</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>437</x><y>19</y><w>720</w><h>435</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>400;270;460;270;460;10;10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>422</x><y>184</y><w>330</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;140;200;10</additional_attributes></element></diagram>
